@@ -1,0 +1,544 @@
+<!-- الرئيسية - متجر إرث العراق -->
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Noto+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec9213",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221a10",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Sans Arabic", "Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Noto Sans Arabic', 'Plus Jakarta Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+<!-- Header -->
+<div class="flex items-center bg-white dark:bg-background-dark/50 border-b border-primary/10 p-4 sticky top-0 z-10 backdrop-blur-md">
+<div class="text-primary flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight flex-1 px-2">لوحة تحكم البائع</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-primary/10 text-primary">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</div>
+<!-- Hero Stats Section -->
+<div class="p-4 space-y-4">
+<div class="flex flex-wrap gap-3">
+<div class="flex min-w-[150px] flex-1 flex-col gap-2 rounded-xl p-5 bg-white dark:bg-slate-800 shadow-sm border border-primary/5">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-sm">payments</span>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-medium">إجمالي المبيعات</p>
+</div>
+<p class="text-slate-900 dark:text-slate-100 tracking-tight text-2xl font-bold">١,٢٥٠,٠٠٠ د.ع</p>
+<p class="text-emerald-600 text-xs font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">trending_up</span>
+                        +١٢% هذا الشهر
+                    </p>
+</div>
+<div class="flex min-w-[150px] flex-1 flex-col gap-2 rounded-xl p-5 bg-white dark:bg-slate-800 shadow-sm border border-primary/5">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-sm">pending_actions</span>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-medium">طلبات معلقة</p>
+</div>
+<p class="text-slate-900 dark:text-slate-100 tracking-tight text-2xl font-bold">٨ طلبات</p>
+<p class="text-primary text-xs font-medium italic">تحتاج معالجة فورية</p>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-primary hover:bg-primary/90 text-white flex items-center justify-center gap-2 py-4 rounded-xl font-bold shadow-lg shadow-primary/20 transition-all">
+<span class="material-symbols-outlined">add_circle</span>
+                إضافة منتج تراثي جديد
+            </button>
+</div>
+<!-- Analytics Chart Placeholder -->
+<div class="px-4 py-2">
+<div class="bg-white dark:bg-slate-800 rounded-xl p-5 shadow-sm border border-primary/5">
+<div class="flex justify-between items-center mb-6">
+<div>
+<h3 class="text-slate-900 dark:text-slate-100 font-bold">تحليلات المنتجات</h3>
+<p class="text-slate-500 text-xs mt-1">أداء المبيعات الأسبوعي</p>
+</div>
+<span class="material-symbols-outlined text-slate-400">insights</span>
+</div>
+<div class="grid grid-cols-7 gap-2 items-end h-32 px-2">
+<div class="bg-primary/20 rounded-t-sm w-full h-[60%] hover:bg-primary transition-colors"></div>
+<div class="bg-primary/20 rounded-t-sm w-full h-[30%] hover:bg-primary transition-colors"></div>
+<div class="bg-primary/20 rounded-t-sm w-full h-[85%] hover:bg-primary transition-colors"></div>
+<div class="bg-primary/20 rounded-t-sm w-full h-[45%] hover:bg-primary transition-colors"></div>
+<div class="bg-primary/20 rounded-t-sm w-full h-[95%] hover:bg-primary transition-colors"></div>
+<div class="bg-primary/20 rounded-t-sm w-full h-[70%] hover:bg-primary transition-colors"></div>
+<div class="bg-primary/20 rounded-t-sm w-full h-[55%] hover:bg-primary transition-colors"></div>
+</div>
+<div class="grid grid-cols-7 gap-2 mt-2 text-[10px] text-slate-400 text-center">
+<span>سبت</span>
+<span>أحد</span>
+<span>اثنين</span>
+<span>ثلاثاء</span>
+<span>أربعاء</span>
+<span>خميس</span>
+<span>جمعة</span>
+</div>
+</div>
+</div>
+<!-- Recent Orders -->
+<div class="p-4 space-y-4 mb-20">
+<div class="flex justify-between items-center">
+<h3 class="text-slate-900 dark:text-slate-100 font-bold text-lg">الطلبات الأخيرة</h3>
+<button class="text-primary text-sm font-medium">عرض الكل</button>
+</div>
+<div class="space-y-3">
+<!-- Order Card 1 -->
+<div class="flex items-center gap-4 bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border-r-4 border-primary">
+<div class="size-14 rounded-lg bg-slate-100 dark:bg-slate-700 overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Traditional Iraqi dates box" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6ParIlKtw_-e97y54ZU8bYJFCiDjnOfN4yRGONM0PQygkzMAdM8_Iijzk9_JTazWzgvqb2mLqr_Mp7YCux24QKkI4AOTRAVASiRwHCCe8L86oSknD0JfDGtV_S2__OCHfZn8gZJAKz1RPQoF0VRz7Ux8ZNf2FNRxHLm3PjiC4BxZrwAoo8cLpOGwgjpOAJv-SkoBmtXrfH7WEUl-Gt8k6pNmf6mjGwG6iH59GzcHvQgKgUxHcAtWYCPXDcQI0C00nOSXvt_kBmbE"/>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="text-slate-900 dark:text-slate-100 font-bold truncate">تمر زهدي فاخر (٥ كغ)</h4>
+<p class="text-slate-500 text-xs">رقم الطلب: #ORD-٩٤٢١</p>
+</div>
+<div class="text-left">
+<span class="inline-block px-2 py-1 rounded-full bg-orange-100 text-orange-600 text-[10px] font-bold mb-1">قيد المعالجة</span>
+<p class="text-slate-900 dark:text-slate-100 font-bold text-sm">٤٥,٠٠٠ د.ع</p>
+</div>
+</div>
+<!-- Order Card 2 -->
+<div class="flex items-center gap-4 bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border-r-4 border-emerald-500">
+<div class="size-14 rounded-lg bg-slate-100 dark:bg-slate-700 overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Handmade Iraqi heritage rug" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnm2cyht9IS3V-k8ekrJBzqnv-j-KI9QOJBdR6IYXKijxsy5vFlve5bSmOdmjoSzkZhI53nXwK8HPa7Buk0vtOLGibU2XeLpI0W51GyTip1yOPgEBYyEwx1U68Rsir5nTeNyvjHQypWkL_2eZCAgSS_v_idkEFDVCjVYusEiEC6qjyhTXfpJXyjq-5um5QigKOgMqVRo4_8v4VWMC6hVuGKc7LBhm4nqZIvtkvzaYt2xwxiOOohaSoqmyPOgu5lMp7Q-5Cqd_7HRE"/>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="text-slate-900 dark:text-slate-100 font-bold truncate">بساط يدوي تراثي</h4>
+<p class="text-slate-500 text-xs">رقم الطلب: #ORD-٨٨٧٢</p>
+</div>
+<div class="text-left">
+<span class="inline-block px-2 py-1 rounded-full bg-emerald-100 text-emerald-600 text-[10px] font-bold mb-1">تم الشحن</span>
+<p class="text-slate-900 dark:text-slate-100 font-bold text-sm">١٢٠,٠٠٠ د.ع</p>
+</div>
+</div>
+<!-- Order Card 3 -->
+<div class="flex items-center gap-4 bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border-r-4 border-primary">
+<div class="size-14 rounded-lg bg-slate-100 dark:bg-slate-700 overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Traditional silver accessory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5Hlp2SqlYhGmOcyHDPZqEPxsWjPx9RyplIRTWWzBZq9EnfuHa3WabTcE5cMqVF2AWFwAxjs09dgHFcD6lWtXzRio-XWVI5ix-JZvaIojulkwhJeFKZp2GuDNDV6T4JeXQR8pLwRaxb0Dor5GrvHMU85nMPjPqz99t-KnvGlQwuXj1-oi5G_zD_427TJ0aUvJbiVjH_X1_D2dTRqBObl2VD_jMX5T54IXxk-fO4kZBIA_y5buBZXCHjX9IOe1Z6C936mX2Tc0pI_Y"/>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="text-slate-900 dark:text-slate-100 font-bold truncate">قلادة فضة صياغة بغدادية</h4>
+<p class="text-slate-500 text-xs">رقم الطلب: #ORD-٨٥٥٠</p>
+</div>
+<div class="text-left">
+<span class="inline-block px-2 py-1 rounded-full bg-orange-100 text-orange-600 text-[10px] font-bold mb-1">قيد المعالجة</span>
+<p class="text-slate-900 dark:text-slate-100 font-bold text-sm">٨٥,٠٠٠ د.ع</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 w-full flex gap-2 border-t border-primary/10 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md px-4 pb-6 pt-3 z-20">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill-1">dashboard</span>
+<p class="text-xs font-bold leading-normal">الرئيسية</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<p class="text-xs font-medium leading-normal">منتجاتي</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">local_shipping</span>
+<p class="text-xs font-medium leading-normal">الطلبات</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-xs font-medium leading-normal">الحساب</p>
+</a>
+</div>
+</div>
+</body></html>
+
+<!-- تفاصيل المنتج - تمور فاخرة -->
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Professional Onboarding Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .heritage-pattern {
+            background-color: transparent;
+            background-image: radial-gradient(#135bec22 1px, transparent 1px), radial-gradient(#135bec22 1px, transparent 1px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased">
+<div class="relative flex min-h-screen w-full flex-col bg-white dark:bg-slate-950 overflow-x-hidden">
+<!-- Minimal Top Bar -->
+<div class="flex items-center bg-white dark:bg-slate-950 p-4 justify-between border-b border-slate-100 dark:border-slate-800">
+<div class="text-slate-900 dark:text-slate-100 flex size-10 shrink-0 items-center justify-center cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-900 rounded-full">
+<span class="material-symbols-outlined">close</span>
+</div>
+<div class="flex-1"></div>
+<button class="text-primary font-semibold text-sm px-4 py-2">Help</button>
+</div>
+<!-- Heritage Pattern Header Section -->
+<div class="relative @container px-6 pt-12 pb-8">
+<div class="absolute inset-0 heritage-pattern opacity-40"></div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="w-24 h-24 mb-8 rounded-2xl bg-primary/10 flex items-center justify-center border border-primary/20 shadow-sm">
+<span class="material-symbols-outlined text-primary text-5xl">auto_awesome</span>
+</div>
+<h1 class="text-slate-900 dark:text-white text-3xl font-bold leading-tight tracking-tight mb-3">
+                    Welcome to the <br/>Heart of Iraq
+                </h1>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal max-w-[280px]">
+                    Discover authentic dates, heritage crafts, and timeless literature.
+                </p>
+</div>
+</div>
+<!-- Action Section -->
+<div class="flex-1 px-6 pt-6 pb-12 flex flex-col gap-4">
+<!-- Primary Registration Button -->
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-primary text-white gap-3 shadow-lg shadow-primary/20 hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined">phone_iphone</span>
+<span class="text-base font-bold leading-normal tracking-wide">Continue with Phone</span>
+</button>
+<div class="flex items-center gap-4 my-4">
+<div class="h-[1px] flex-1 bg-slate-200 dark:bg-slate-800"></div>
+<span class="text-slate-400 text-xs font-semibold uppercase tracking-widest">or continue with</span>
+<div class="h-[1px] flex-1 bg-slate-200 dark:bg-slate-800"></div>
+</div>
+<!-- Alternative Login Cards -->
+<div class="flex flex-col gap-3">
+<button class="flex w-full items-center justify-start rounded-xl h-14 px-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-all gap-4">
+<div class="w-6 flex items-center justify-center">
+<svg class="w-5 h-5" viewbox="0 0 24 24">
+<path d="M17.05 20.28c-.96.95-2.21 1.72-4.14 1.72-2.11 0-3.37-1.33-4.48-1.33-1.12 0-2.48 1.33-4.3 1.33-3.04 0-5.74-4.22-5.74-8.08 0-3.66 2.27-5.59 4.45-5.59 1.15 0 2.14.73 3.09.73.91 0 2.15-.81 3.51-.81 1.43 0 2.76.62 3.63 1.76-2.9 1.62-2.42 5.51.34 6.78-.63 1.55-1.42 3.24-2.45 4.49zM12.03 5.46c-.08-2.31 1.95-4.39 4.19-4.46.22 2.61-2.49 4.68-4.19 4.46z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="text-slate-900 dark:text-white font-semibold text-base">Apple</span>
+</button>
+<button class="flex w-full items-center justify-start rounded-xl h-14 px-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-all gap-4">
+<div class="w-6 flex items-center justify-center">
+<svg class="w-5 h-5" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path>
+</svg>
+</div>
+<span class="text-slate-900 dark:text-white font-semibold text-base">Google</span>
+</button>
+</div>
+</div>
+<!-- Footer Links -->
+<div class="px-8 pb-10 text-center">
+<p class="text-slate-400 text-xs leading-relaxed">
+                By continuing, you agree to our 
+                <a class="text-slate-600 dark:text-slate-300 font-semibold hover:text-primary transition-colors underline decoration-slate-200 underline-offset-4" href="#">Terms of Service</a> 
+                and 
+                <a class="text-slate-600 dark:text-slate-300 font-semibold hover:text-primary transition-colors underline decoration-slate-200 underline-offset-4" href="#">Privacy Policy</a>.
+            </p>
+</div>
+<!-- Bottom Heritage Accent Border -->
+<div class="h-2 w-full bg-primary relative overflow-hidden">
+<div class="absolute inset-0 heritage-pattern opacity-20 bg-white"></div>
+</div>
+</div>
+</body></html>
+
+<!-- إتمام الدفع الآمن -->
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec9213",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221a10",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Main Marketplace Dashboard</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden pb-20">
+<!-- Header -->
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-4 pt-6 pb-2">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full overflow-hidden border-2 border-primary">
+<img class="w-full h-full object-cover" data-alt="User profile picture with traditional scarf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6vheuGZTy3ReGlkNg0vx4-WnucSGlAqDqyrdPHvevRioDltO6da-qp6tpRCUV3KhHVemEjxKiHTscdJVl_qzUDGmNdNbHPDoYvB5vNoWXhdUCDmJsY76Fi1Gj-F6Ytisb1pnwrnyDIQbMfXilqoAX8mOHQD3WGnenhCNsONTCA25BoAUXpfky7e_Jg5pzaoLhbIVXcoZgLBy2q840lhDir9WHRSV_RgHqQO3bvXjgAIq8yzy1tK20OyRCK_8H7HcmyyCLZ1FquuM"/>
+</div>
+<div>
+<p class="text-xs text-slate-500 dark:text-slate-400">Welcome back,</p>
+<h2 class="text-lg font-bold leading-tight">Ahmed Al-Iraqi</h2>
+</div>
+</div>
+<button class="relative p-2 text-slate-700 dark:text-slate-200">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 flex h-2 w-2 rounded-full bg-primary"></span>
+</button>
+</div>
+<!-- Search Bar -->
+<div class="relative">
+<label class="flex items-center bg-slate-100 dark:bg-slate-800 rounded-xl px-4 h-12">
+<span class="material-symbols-outlined text-slate-400">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full placeholder:text-slate-400" placeholder="Search for heritage, dates, or crafts..." type="text"/>
+</label>
+</div>
+</header>
+<!-- Hero Banner Section -->
+<section class="px-4 py-4">
+<div class="relative h-48 w-full rounded-xl overflow-hidden shadow-lg">
+<div class="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent z-[1]"></div>
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Abundant harvest of golden Iraqi dates in wicker baskets" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBdV1NhbKidZCU55wGFcqR0s_w7kj1AhmW4cW82m2QIaV3jCLqZbnPYuvRBoBvWQfdMTLSNojy3nBH32XTnrHAnMQWLUbsx9BFv85lmGQ6GeSSKsmeVgdBeARzAvDCH7g6HGkrB7dVAD9bIe9LDteShQYYPE-av88-t_txmIFjdsmiytoU4ST9RKSUt9diaco4oz6l-2lqIdE8T3WBLfG4PnIWnyV8AVckr8uEt2d1mNGbNucM9DHngn_A5NwKLusXodHUvu6-7A7k');"></div>
+<div class="relative z-[2] h-full flex flex-col justify-center p-6 text-white">
+<span class="bg-primary text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded w-max mb-2">New Season</span>
+<h1 class="text-2xl font-bold leading-tight max-w-[200px]">Special Iraqi Dates Harvest</h1>
+<p class="text-sm mt-1 text-slate-200">Fresh from Basra groves</p>
+<button class="mt-4 bg-primary text-white text-xs font-bold py-2 px-4 rounded-lg w-max">Shop Now</button>
+</div>
+</div>
+</section>
+<!-- Categories Section -->
+<section class="py-4">
+<div class="flex items-center justify-between px-4 mb-4">
+<h3 class="font-bold text-lg">Categories</h3>
+<button class="text-primary text-sm font-medium">See All</button>
+</div>
+<div class="flex overflow-x-auto gap-6 px-4 no-scrollbar">
+<div class="flex flex-col items-center gap-2 shrink-0">
+<div class="size-16 rounded-full bg-primary/10 flex items-center justify-center border-2 border-primary/20">
+<span class="material-symbols-outlined text-primary text-3xl">bakery_dining</span>
+</div>
+<span class="text-xs font-medium text-center">Dates &amp; Sweets</span>
+</div>
+<div class="flex flex-col items-center gap-2 shrink-0">
+<div class="size-16 rounded-full bg-primary/10 flex items-center justify-center border-2 border-primary/20">
+<span class="material-symbols-outlined text-primary text-3xl">checkroom</span>
+</div>
+<span class="text-xs font-medium text-center">Heritage Clothing</span>
+</div>
+<div class="flex flex-col items-center gap-2 shrink-0">
+<div class="size-16 rounded-full bg-primary/10 flex items-center justify-center border-2 border-primary/20">
+<span class="material-symbols-outlined text-primary text-3xl">draw</span>
+</div>
+<span class="text-xs font-medium text-center">Handicrafts</span>
+</div>
+<div class="flex flex-col items-center gap-2 shrink-0">
+<div class="size-16 rounded-full bg-primary/10 flex items-center justify-center border-2 border-primary/20">
+<span class="material-symbols-outlined text-primary text-3xl">menu_book</span>
+</div>
+<span class="text-xs font-medium text-center">Digital Content</span>
+</div>
+</div>
+</section>
+<!-- Featured Products Grid -->
+<section class="px-4 py-4">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-bold text-lg">Local Treasures</h3>
+<span class="text-xs text-slate-500">Showing 24 results</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Product 1 -->
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="relative aspect-square">
+<img class="w-full h-full object-cover" data-alt="Traditional handmade Iraqi clay pottery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb7x6IhKUAnhzEFWx8UhQeN5sX_kn8cYUb9Cnw8VY2xACzS2yxFKtA5RlAHCw82EhpZgceJQGaleaDxONSnAqI4UJasJQKqrJu_7gtztMjfYe9_W58s4-mNpXwI_HZ422-66R4Z_ooJDUbIGqWCaaMi4VCXND_KKJeU3vsKD3XFwtlbjp1A0RkW_-jXQ7PSe_aBzQ4DtEdt6YC8p6yvythqIGrPgSWK5BGUa8wvWIDz3rHtdEKhgUUKOV3rdjW3BivpQocdUj5tVo"/>
+<div class="absolute top-2 left-2 bg-primary/90 text-white text-[8px] font-bold px-1.5 py-0.5 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[10px]">verified</span> Supporter of Local Craft
+                        </div>
+<button class="absolute top-2 right-2 size-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-slate-600 text-sm">favorite</span>
+</button>
+</div>
+<div class="p-3">
+<h4 class="text-sm font-semibold truncate">Handcrafted Clay Pot</h4>
+<p class="text-xs text-slate-500 mb-2">Heritage Pottery</p>
+<div class="flex items-center justify-between">
+<p class="text-primary font-bold text-sm">45,000 IQD</p>
+<button class="size-8 rounded-lg bg-primary text-white flex items-center justify-center shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-lg">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="relative aspect-square">
+<img class="w-full h-full object-cover" data-alt="Premium box of stuffed Iraqi Kleicha sweets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCECNTvqMtCmqHTQaW_TSEqWaSG0JwkB_i9uVjjj3e-_imkoSa2-5d0_8O7ZZOlyWii7X-BXEpuSL54eyTxVxQH60VeKe0OQMETMVGiyHCDr6WVO-toJ2g4-prCOdiyTL2hYwmdnpUxFMsQJTpAS7IDuOeWxbpB6XUJxBkhnDgsIeL6dnzAao8_pbGjIY3Tu8EDHV_ArQ1O5bLpiCFoGy3LJIhWs22SpjmLRGuGfVjxjfViJRhEcaD0xxe5BXe_eNjHNXINGBGdB9o"/>
+<button class="absolute top-2 right-2 size-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-slate-600 text-sm">favorite</span>
+</button>
+</div>
+<div class="p-3">
+<h4 class="text-sm font-semibold truncate">Premium Kleicha Box</h4>
+<p class="text-xs text-slate-500 mb-2">Traditional Sweets</p>
+<div class="flex items-center justify-between">
+<p class="text-primary font-bold text-sm">18,500 IQD</p>
+<button class="size-8 rounded-lg bg-primary text-white flex items-center justify-center shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-lg">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="relative aspect-square">
+<img class="w-full h-full object-cover" data-alt="Embroidered traditional Iraqi Abaya garment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg-NFNSBJgYpj6oWRqEgB22KRhvafNDYrnGEU3lXIpvZObsBT5GYTVgQgqgIDI0FtCAlSSjxnHOAm8CW4f-QHI-3S7aHJNst7qzTXrCOSemUB2cwvseQMFLLq7nV7jPvtcLkm7RGF4vAykK54JGVR8UIHzumhaIxmMqJc4bYwxO5082TaSMq5qnk9xduLGwtdFSTyDdceQpjf5dvGhp2G1qVt1cGRGPuR56bIH4brhqpvvrO75m0fq0XjeUQBSbYt7VlWANlrvxp8"/>
+<div class="absolute top-2 left-2 bg-primary/90 text-white text-[8px] font-bold px-1.5 py-0.5 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[10px]">verified</span> Supporter of Local Craft
+                        </div>
+<button class="absolute top-2 right-2 size-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-slate-600 text-sm">favorite</span>
+</button>
+</div>
+<div class="p-3">
+<h4 class="text-sm font-semibold truncate">Traditional Embroidered Abaya</h4>
+<p class="text-xs text-slate-500 mb-2">Heritage Wear</p>
+<div class="flex items-center justify-between">
+<p class="text-primary font-bold text-sm">120,000 IQD</p>
+<button class="size-8 rounded-lg bg-primary text-white flex items-center justify-center shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-lg">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="relative aspect-square">
+<img class="w-full h-full object-cover" data-alt="Cover of a book about Mesopotamia history" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwEaeRwLnf6ns1b8vIkd4EnlbHkG4U0_ORYzrpwBJd2M0bQGol6mN1DdGh0MGzC72OTmPyGA0XPATMql8qfJorlrmr9sn4zUKUIeET38fSJUbChjeUgV3Y7B9TU4wEef8-n3OjuUGsez7D3RVOA9iKMnRhrD6H_2aSdwDoP3g-pMPs6atAJFaemTQ2sIHR8AiR1hPY7Sz2PB3xcjALBmefhs76jWLbBXkzpdHocIKFjQYGl_F5VT_ycRdrvAXR7DY1xbdx_2FQwkM"/>
+<button class="absolute top-2 right-2 size-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-slate-600 text-sm">favorite</span>
+</button>
+</div>
+<div class="p-3">
+<h4 class="text-sm font-semibold truncate">Mesopotamia History E-Book</h4>
+<p class="text-xs text-slate-500 mb-2">Digital Collection</p>
+<div class="flex items-center justify-between">
+<p class="text-primary font-bold text-sm">12,000 IQD</p>
+<button class="size-8 rounded-lg bg-primary text-white flex items-center justify-center shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-lg">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl border-t border-slate-100 dark:border-slate-800 px-4 pb-6 pt-2 z-50">
+<div class="flex justify-between items-center max-w-md mx-auto">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined fill-1">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-[10px] font-medium">Categories</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<div class="relative">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[8px] text-white font-bold">3</span>
+</div>
+<span class="text-[10px] font-medium">Cart</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</a>
+</div>
+</nav>
+</div>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .fill-1 {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</body></html>
